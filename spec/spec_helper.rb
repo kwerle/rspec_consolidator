@@ -16,5 +16,5 @@ end
 
 def file_fixture(name)
   path = File.dirname(__FILE__) + "/fixtures/files/#{name}"
-  File.new(path, 'r')
+  File.new(path, "r")
 end

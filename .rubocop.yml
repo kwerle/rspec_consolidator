@@ -12,3 +12,8 @@ Style/StringLiteralsInInterpolation:
 
 Layout/LineLength:
   Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*spec.rb'
+    - 'rspec_consolidator.gemspec'
