@@ -13,3 +13,8 @@ RSpec.configure do |config|
     c.syntax = :expect
   end
 end
+
+def file_fixture(name)
+  path = File.dirname(__FILE__) + "/fixtures/files/#{name}"
+  File.new(path, 'r')
+end

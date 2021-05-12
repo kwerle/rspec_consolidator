@@ -8,6 +8,9 @@ image:
 shell: image
 	docker run --rm -it $(MOUNTS) $(IMAGE_NAME) bash
 
+console: image
+	docker run --rm -it $(MOUNTS) $(IMAGE_NAME) ./bin/console
+
 test: image
 	docker run --rm -it $(IMAGE_NAME) rake
 

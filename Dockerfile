@@ -1,7 +1,11 @@
 FROM ruby:3
 
-COPY . /src/
-
 WORKDIR /src/
 
+COPY Gemfile .
+COPY *.gemspec ./
+COPY lib/rspec_consolidator/version.rb ./lib/rspec_consolidator/version.rb
+
 RUN bundle
+
+COPY . ./

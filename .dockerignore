@@ -1,2 +1,11 @@
 Dockerfile
 Makefile
+.DS_Store
+.dockerignore
+.editorconfig
+.git
+.github
+.gitignore
+.rspec
+.rspec_status
+.rubocop.yml
