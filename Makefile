@@ -12,7 +12,7 @@ console: image
 	docker run --rm -it $(MOUNTS) $(IMAGE_NAME) ./bin/console
 
 test: image
-	docker run --rm -it $(IMAGE_NAME) rake
+	docker run --rm -it $(IMAGE_NAME) bundle exec rake
 
 guard: image
-	docker run --name guard --rm -it $(MOUNTS) $(IMAGE_NAME) guard
+	docker run --name guard --rm -it $(MOUNTS) $(IMAGE_NAME) bundle exec guard
