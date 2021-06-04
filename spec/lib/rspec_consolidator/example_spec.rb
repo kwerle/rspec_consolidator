@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require_relative "../../spec_helper"
-require "json"
 
 # {
 #   "id": "./spec/rspec_consolidator_spec.rb[1:2]",
